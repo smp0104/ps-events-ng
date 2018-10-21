@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class EventsAppComponent {
-  title = 'ps-events-ng';
+  title = 'Events';
 }
