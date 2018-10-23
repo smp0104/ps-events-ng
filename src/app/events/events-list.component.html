@@ -1,4 +1,5 @@
 <div>
   <h1> Upcoming NG Events</h1>
-  <events-thumbnail [event] = "events" ></events-thumbnail>
+  <events-thumbnail [event] = "events" #thumb ></events-thumbnail>
+  <button class="btn btn-primary" (click)="thumb.clickforLog()">Click for Data Log</button>
 </div>

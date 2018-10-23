@@ -9,7 +9,9 @@ export class EventThumbnailComponent implements OnInit {
   @Input() event: any;
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {  }
+ clickforLog() {
+  console.log('Output to Thumbnail component');
+  console.log(this.event);
+ }
 }
