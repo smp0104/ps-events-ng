@@ -1,0 +1,14 @@
+.navbar-brand:hover {
+color: #df691a
+}
+.nav.navbar-nav {
+  font-size: 15px;
+}
+#searchForm {
+  margin-right: 100px;
+}
+@media (max-width: 1200) {#searchFrom{display: none;}}
+.navbar.navbar-default{
+  padding-top: 0%;
+  margin-top: 0%;
+}
