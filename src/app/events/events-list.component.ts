@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'events-list',
   templateUrl: './events-list.component.html',
@@ -18,6 +18,8 @@ export class EventsListComponent implements OnInit {
       country: 'England'
     }
 };
+  // tslint:disable-next-line:no-inferrable-types
+  enableLogButton: boolean = false;
   constructor() { }
 
   ngOnInit() {

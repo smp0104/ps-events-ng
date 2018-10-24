@@ -1,5 +1,10 @@
 <div>
   <h1> Upcoming NG Events</h1>
   <events-thumbnail [event] = "events" #thumb ></events-thumbnail>
-  <button class="btn btn-primary" (click)="thumb.clickforLog()">Click for Data Log</button>
+  <label>
+    <input type="checkbox" [(ngModel)]="enableLogButton"> Click for Button
+  </label>
+  <div>
+  <button *ngIf = "enableLogButton" class="btn btn-primary" (click)="thumb.clickforLog()">Click for Data Log</button>
+  </div>
 </div>
