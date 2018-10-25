@@ -1,6 +1,11 @@
 <div>
   <h1> Upcoming NG Events</h1>
-  <events-thumbnail [event] = "events" #thumb ></events-thumbnail>
+  <hr>
+  <div class="row">
+    <div *ngFor="let event of events"  class="col-md-6">
+        <events-thumbnail [event] = "event" #thumb></events-thumbnail>
+    </div>
+  </div>
   <label>
     <input type="checkbox" [(ngModel)]="enableLogButton"> Click for Button
   </label>
