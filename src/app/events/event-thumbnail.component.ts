@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NgSwitch } from '@angular/common';
 
 @Component({
   selector: 'events-thumbnail',
@@ -10,8 +11,5 @@ export class EventThumbnailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {  }
- clickforLog() {
-  console.log('Output to Thumbnail component');
-  console.log(this.event);
- }
+
 }

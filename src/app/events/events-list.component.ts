@@ -319,9 +319,14 @@ export class EventsListComponent implements OnInit {
   ];
   // tslint:disable-next-line:no-inferrable-types
   enableLogButton: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
+  clickforLog() {
+  console.log('Output to Thumbnail component');
+  console.log(this.events);
+ }
 
 }
