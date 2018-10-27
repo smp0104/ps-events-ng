@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { EventsService } from '../events.service';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'events-list',
-  templateUrl: './events-list.component.html',
-  styleUrls: ['./events-list.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class EventsListComponent implements OnInit {
+export class EventsService {
 
-  events = [
+
+  EventsData = [
     {
       id: 1,
       name: 'Angular Connect',
@@ -318,16 +316,5 @@ export class EventsListComponent implements OnInit {
       ]
     }
   ];
-  // tslint:disable-next-line:no-inferrable-types
-  enableLogButton: boolean = false;
-
   constructor() { }
-
-  ngOnInit() {
-  }
-  clickforLog() {
-  console.log('Output to Thumbnail component');
-  console.log(this.events);
- }
-
 }
