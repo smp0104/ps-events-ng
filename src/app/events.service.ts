@@ -5,8 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class EventsService {
 
-
-  EventsData = [
+  constructor() { }
+  getEvents() {return EVENTS; }
+}
+  const EVENTS = [
     {
       id: 1,
       name: 'Angular Connect',
@@ -316,5 +318,4 @@ export class EventsService {
       ]
     }
   ];
-  constructor() { }
-}
+
