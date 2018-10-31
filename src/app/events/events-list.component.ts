@@ -22,7 +22,8 @@ export class EventsListComponent implements OnInit {
   clickforLog() {
   console.log('Output to Thumbnail component');
   console.log(this.events);
-  toastr.info('Hit Ctrl+Shift+G to view data');
+  toastr.info('Hit Ctrl+Shift+J to view data');
+  toastr.error('Hit Ctrl+Shift+J to view data');
  }
  thumbnailClick(eventName) {
   toastr.success(eventName, {closeButton: true});

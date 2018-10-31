@@ -7,6 +7,7 @@ export class EventsService {
 
   constructor() { }
   getEvents() {return EVENTS; }
+  getEvent(id: number) {return EVENTS.find((event) => event.id === id); }
 }
   const EVENTS = [
     {

@@ -1,5 +1,5 @@
 
-  <div class="well hoverwell thumbnail">
+  <div [routerLink]="['/events', event.id ]" class="well hoverwell thumbnail">
   <div style="float: right;align-items: center"><img style="max-height: 150px" src="{{event.imageUrl}}"></div>
   <h2>{{event?.name}}</h2>
   <div>Date: {{event?.date}}</div>
