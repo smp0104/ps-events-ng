@@ -18,7 +18,7 @@ export class EventsService {
       price: 599.99,
       imageUrl: '/assets/images/ng-ind.png',
       location: {
-        address: '1057 DT',
+        address: '',
         city: 'London',
         country: 'England'
       },
